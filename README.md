@@ -1,31 +1,43 @@
-# SmartMonitor IoT Project
+# SmartMonitor Documentation
 
-SmartMonitor is an Internet of Things (IoT) project designed to monitor various environmental parameters. This project utilizes a range of sensors to provide real-time data, which can be accessed through a web interface or mobile application. Below is an overview of the features and functionalities:
+## Project Overview
+SmartMonitor is an innovative tool designed to monitor and manage system resources effectively, providing users with real-time insights and control.
 
-## Features
-- **Real-time Monitoring:** Get live updates on temperature, humidity, air quality, and more.
-- **User-Friendly Interface:** Access data seamlessly through a web app and mobile application (Flutter-based).
-- **Data Logging:** Historical data can be accessed for analysis and comparison.
-- **Alerts and Notifications:** Receive alerts for unusual readings based on predefined thresholds.  
+## Key Features
+- Real-time monitoring of system performance
+- Intuitive user interface
+- Customizable alerts and notifications
+- Historical data analysis
 
-## Technologies Used
-- **IoT Sensors:** DHT11 (Temperature & Humidity), MQ-135 (Air Quality), and other compatible sensors.
-- **Microcontroller:** ESP8266 or Arduino for data collection and transmission.
-- **Web Technologies:** HTML, CSS, JavaScript for the web interface.
-- **Mobile Framework:** Flutter for the mobile application interface.
+## System Architecture
+SmartMonitor utilizes a client-server architecture that enables seamless data collection and analysis.
 
-## Setup Instructions
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/SuhailBasheerali/smartmonitor.git
-   cd smartmonitor
-   ```  
-2. Install the necessary dependencies for the project.
-3. Follow the instructions in the `setup/` directory to configure your sensors and microcontroller.
-4. Run the web server and mobile application to access SmartMonitor.
+## Project Components
+- **Client:** Responsible for collecting data from the system.
+- **Server:** Processes and stores the data, providing a web interface for analysis.
+- **Database:** Stores historical monitoring data.
 
-## Contributing
-Contributions are welcome! Please open an issue or submit a pull request to contribute to this project.
+## Technology Stack
+- **Frontend:** React.js
+- **Backend:** Node.js, Express
+- **Database:** MongoDB
+- **Monitoring Tools:** Custom scripts and third-party libraries
+
+## System Workflow
+1. Client collects system data.
+2. Data is sent to the server for processing.
+3. Server analyzes data and stores it in the database.
+4. Users can access the data through the web interface.
+
+## Quick Start
+For a detailed setup guide, please refer to [SETUP_GUIDE.md](SETUP_GUIDE.md).
+
+## Contributing Guidelines
+We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## Documentation Links
+- [Official Documentation](documentation_link_here)
+- [API Reference](api_reference_link_here)
