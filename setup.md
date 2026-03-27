@@ -5,6 +5,7 @@ This setup covers all components used by this project:
 - ESP32 firmware (`/espcode/sketch_mar01a/sketch_mar01a.ino`)
 - Firebase (Authentication + Realtime Database)
 - Architecture-level external services (Supabase scheduled function + AI server contract)
+- AI server external dependencies (LLM runtime + log store contract)
 
 > Note: Supabase budget monitor and AI server are documented system components, but their implementations are not present in this repository.
 
@@ -146,6 +147,9 @@ The app and firmware use this hierarchy:
   - `POST /ask-ai`
 - Contract and workflow are defined in:
   - `AI_WORKFLOW.md`
+- Typical external dependencies:
+  - LLM runtime for natural-language generation
+  - Firestore (or equivalent log store) for interaction logging/observability
 - This repository does not include AI server implementation or app client integration for this endpoint.
 
 ---
