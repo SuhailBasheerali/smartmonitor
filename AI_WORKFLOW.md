@@ -77,7 +77,7 @@ or
 }
 ```
 
-## Auxiliary endpoints (recommended)
+### Auxiliary endpoints (recommended)
 - `GET /health`
 - `GET /memory/stats?userId=...`
 - `POST /memory/clear` (with user context)
