@@ -45,7 +45,7 @@ The AI assistant enables:
 
 ## 3. API Contract
 
-## Primary endpoint
+### Primary endpoint
 `POST /ask-ai`
 
 ### Request (example)

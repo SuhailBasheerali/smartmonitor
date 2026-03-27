@@ -90,7 +90,7 @@ smartmonitor/
 
 ## Setup
 
-## Prerequisites
+### Prerequisites
 - Flutter SDK (matching Dart constraint in `pubspec.yaml`: `>=3.0.0 <4.0.0`)
 - Firebase project with:
   - Authentication enabled
@@ -102,7 +102,7 @@ smartmonitor/
   - `Firebase_ESP_Client`
   - ESP32 Wi-Fi/time support
 
-## Flutter app setup
+### Flutter app setup
 1. From repo root:
    ```bash
    flutter pub get
@@ -113,7 +113,7 @@ smartmonitor/
    ```
 3. Verify Firebase is initialized in `lib/main.dart`.
 
-## ESP32 firmware setup
+### ESP32 firmware setup
 1. Open `espcode/sketch_mar01a/sketch_mar01a.ino`.
 2. Configure Wi-Fi/Firebase/auth/device constants.
 3. Flash firmware to ESP32.
