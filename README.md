@@ -45,6 +45,15 @@ Primary data hierarchy used by firmware and app:
 - **Supabase Edge Function** (scheduled): budget threshold checks (e.g., 80%) + email alerts.
 - **AI Assistant server** (Node.js/Express): natural-language command/advice endpoint(s), LLM integration, conversation memory, and interaction logs.
 
+### 5) Required Components Checklist
+- **ESP32 firmware** (`/espcode/sketch_mar01a/sketch_mar01a.ino`) — implemented in this repository.
+- **Flutter app** (`/lib`) — implemented in this repository.
+- **Firebase Realtime Database** — runtime data backbone used by firmware and app.
+- **Supabase budget monitor** (scheduled Edge Function) — architecture-level external component.
+- **AI assistant server** (`POST /ask-ai`) — architecture-level external component.
+- **LLM runtime** (used by AI server) — architecture-level external dependency.
+- **Log store** (Firestore or equivalent, used by AI server) — architecture-level external dependency.
+
 ---
 
 ## System Design & Architecture
